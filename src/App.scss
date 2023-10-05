@@ -1,0 +1,39 @@
+@import "./styles/colors.scss";
+
+.wrapper {
+  background-color: $very_dark_blue;
+  height: 100vh;
+  background-image: url("./assets/pattern-hills.svg"),
+    url("./assets/bg-stars.svg");
+  background-position: center bottom, center top;
+  background-size: contain, cover;
+  background-repeat: repeat-x, no-repeat;
+  color: $white;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-bottom: 1rem;
+
+  a {
+    padding: 0 10px;
+  }
+}
+
+footer a:hover{
+  svg>path{
+     fill: $soft_red;
+  }
+}
+
+svg>path {
+  fill: $greyish_blue;
+}
